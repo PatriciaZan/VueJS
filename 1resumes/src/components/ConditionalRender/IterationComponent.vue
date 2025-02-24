@@ -34,6 +34,21 @@ const books = ref([
     },
 ])
 
+const complexGamesObj = ref({
+    game1: {
+        title: 'Space Explorer',
+        genre: 'Sci-Fi',
+        plataform: 'PC',
+        releaseDate: '2023-05-20'
+    },
+    game2: {
+        title: 'Space II',
+        genre: 'Sci-Fi',
+        plataform: 'PC',
+        releaseDate: '2024-05-24'
+    },
+})
+
 </script>
 
 <template>
@@ -47,5 +62,22 @@ const books = ref([
         <li>Author: {{ author }}</li>
         <li>Genre: {{ genre }}</li>
         <li>Publication: {{ publicationYear }}</li>
+    </ul>
+
+    <h1>Games Obj</h1>
+
+    <ul v-for="(game, index) in complexGamesObj" :key="index">
+        <li>{{ game }}</li>
+        <br>
+
+        <!-- Single value from Obj -->
+         <li v-for="(property, i) in game" :key="i">
+            {{ property }}
+         </li>
+    </ul>
+
+    <h1>v-for iteration on numbers</h1>
+    <ul v-for="number in 5" :key="number">
+        <li>{{ number }}</li>
     </ul>
 </template>
