@@ -1,14 +1,41 @@
 <script setip>
-import { ref } from 'vue';
-import Event from './components/Events/Event.vue';
-import EventForm from './components/Events/EventForm.vue';
-let count = ref(0)
+import LifeCycleComponent from './components/LifeCycleHooks/LifeCycleComponent.vue';
 
-const formHandler = (userName, email, password)=>{
-    console.log('username: ', userName);
-    console.log('email: ', email);
-    console.log('password: ', password);
-}
+
+
+// import { provide } from 'vue';
+// import PracticeComponent from './components/Exercises/PracticeComponent.vue';
+// // Array
+// provide('friends', ['Alex', 'jordan', 'maria', 'john'])
+// provide('games', {
+//   id: 1,
+//   title: 'Game 1',
+//   genre: ['Action', 'Adventure', 'RPG'],
+//   platform: ['PC']
+// })
+
+// import { provide } from 'vue';
+// import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
+// // const studentName = 'Alex'
+// // const studentAge = 20
+// provide('studantName', 'alex')
+// provide('studentAge', 20)
+
+// import DefaultSlot from './components/Slots/DefaultSlot.vue';
+// import FallbackCOntent from './components/Slots/FallbackContent.vue';
+// import NamedSlot from './components/Slots/NamedSlot.vue';
+// import SlotComponent from './components/Slots/SlotComponent.vue';
+
+// import { ref } from 'vue';
+// import Event from './components/Events/Event.vue';
+// import EventForm from './components/Events/EventForm.vue';
+// let count = ref(0)
+
+// const formHandler = (userName, email, password)=>{
+//     console.log('username: ', userName);
+//     console.log('email: ', email);
+//     console.log('password: ', password);
+// }
 
 // import StaticPropsComponent from './components/Props/StaticPropsComponent.vue';
 // import DynamicPropsComponent from './components/Props/DynamicPropsComponent.vue';
@@ -39,8 +66,6 @@ const formHandler = (userName, email, password)=>{
 // import ModuleStyle from './components/Styles/ModuleStyle.vue';
 
 // import MyEvent from './components/Events/MyEvent.vue';
-
-
 
 </script>
 
@@ -91,10 +116,49 @@ const formHandler = (userName, email, password)=>{
      <CustomValidation name="Patricia" age="23" password="12345" /> -->
 
      <!-- EVENTS -->
-      <h1>Count {{ count }}</h1>
+      <!-- <h1>Count {{ count }}</h1>
       <Event @incrementCounter="count++" />
       <hr>
-      <EventForm @userInfo="formHandler"/>
+      <EventForm @userInfo="formHandler"/> -->
+
+    <!-- SLOT -->
+      <!-- <SlotComponent>
+        <h1>Content 1</h1>
+      </SlotComponent>
+
+      <hr>
+
+      <FallbackContent>
+        <p>Fallback will not work bc I'm providing content inside the component</p>
+      </FallbackContent>
+
+      <hr>
+
+      <NamedSlot> -->
+        <!-- v-slot:one -->
+         <!-- <template v-slot:one>
+          <h1>This conten will go to slot one</h1>
+         </template> -->
+        <!-- #two -->
+         <!-- <template #two>
+          <h1>This content will go to slot two</h1>
+         </template>
+      </NamedSlot>
+
+      <hr>
+
+      <DefaultSlot>
+        <template #default>
+          <h1>Deafault Slot</h1>
+        </template>
+      </DefaultSlot> -->
+      <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" /> -->
+
+    <!-- Exercise I -->
+     <!-- <PracticeComponent />  -->
+
+    <!-- LifeCycleComponents -->
+     <LifeCycleComponent />
 </template>
 
 <style scoped></style>
