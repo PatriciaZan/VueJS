@@ -1,7 +1,20 @@
 <script setip>
-import LifeCycleComponent from './components/LifeCycleHooks/LifeCycleComponent.vue';
+import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue';
 
+// import ComposableCounter from './components/Composable/ComposableCounter.vue';
+// import ToggleFriends from './components/Async/ToggleFriends.vue';
 
+// import BasicRef from './components/TemplateRef/BasicRef.vue';
+// import FunctionRef from './components/TemplateRef/FunctionRef.vue';
+// import RefComponent from './components/TemplateRef/RefComponent.vue';
+
+// import WatcherComponent from './components/Watchers/WatcherComponent.vue';
+// import ReactiveObj from './components/Watchers/ReactiveObj.vue';
+// import MultipleSources from './components/Watchers/MultipleSources.vue';
+
+// import LifeCycleComponent from './components/LifeCycleHooks/LifeCycleComponent.vue';
+// import { ref } from 'vue';
+// const showHide = ref(true)
 
 // import { provide } from 'vue';
 // import PracticeComponent from './components/Exercises/PracticeComponent.vue';
@@ -158,7 +171,27 @@ import LifeCycleComponent from './components/LifeCycleHooks/LifeCycleComponent.v
      <!-- <PracticeComponent />  -->
 
     <!-- LifeCycleComponents -->
-     <LifeCycleComponent />
+     <!-- <LifeCycleComponent v-show="showHide"/>
+     <button @click="showHide = !showHide">Show / Hide</button> -->
+
+    <!-- Watchers -->
+     <!-- <WatcherComponent /> -->
+     <!-- <ReactiveObj /> -->
+     <!-- <MultipleSources /> -->
+
+    <!-- Template ref -->
+     <!-- <BasicRef />
+     <FunctionRef />
+     <RefComponent /> -->
+
+     <!-- Async -->
+      <!-- <ToggleFriends /> -->
+    
+    <!-- Composable -->
+     <!-- <ComposableCounter /> -->
+
+    <!-- CustomDirectives -->
+     <CustomDirectives />
 </template>
 
 <style scoped></style>
