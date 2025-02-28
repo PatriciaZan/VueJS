@@ -1,5 +1,5 @@
 <script setup>
-
+import UserSearch from './components/GitHubUserSearch/UserSearch.vue';
 
 
 </script>
@@ -10,6 +10,10 @@
   <!-- <CalculatorVue /> -->
   <!-- <AccordionComp /> -->
   <!-- <FormValidation /> -->
+  <!-- <PasswordGenarator /> -->
+  <!-- <ProgressSteps /> -->
+  <!-- <DadJokes /> -->
+  <UserSearch /.
 </template>
 
 <style scoped>
