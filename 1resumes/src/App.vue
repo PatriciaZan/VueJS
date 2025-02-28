@@ -1,23 +1,12 @@
 <script setip>
-import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue';
+import TodoList from './components/Projects/TodoList/TodoList.vue';
 
-// import ComposableCounter from './components/Composable/ComposableCounter.vue';
-// import ToggleFriends from './components/Async/ToggleFriends.vue';
-
-// import BasicRef from './components/TemplateRef/BasicRef.vue';
-// import FunctionRef from './components/TemplateRef/FunctionRef.vue';
-// import RefComponent from './components/TemplateRef/RefComponent.vue';
-
-// import WatcherComponent from './components/Watchers/WatcherComponent.vue';
-// import ReactiveObj from './components/Watchers/ReactiveObj.vue';
-// import MultipleSources from './components/Watchers/MultipleSources.vue';
-
-// import LifeCycleComponent from './components/LifeCycleHooks/LifeCycleComponent.vue';
+// import LifeCycleComponent
 // import { ref } from 'vue';
 // const showHide = ref(true)
 
-// import { provide } from 'vue';
-// import PracticeComponent from './components/Exercises/PracticeComponent.vue';
+
+// import PracticeComponent
 // // Array
 // provide('friends', ['Alex', 'jordan', 'maria', 'john'])
 // provide('games', {
@@ -27,21 +16,15 @@ import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue
 //   platform: ['PC']
 // })
 
-// import { provide } from 'vue';
-// import SchoolComponent from './components/ProvideAndInject/SchoolComponent.vue';
+
+// import SchoolComponent
 // // const studentName = 'Alex'
 // // const studentAge = 20
 // provide('studantName', 'alex')
 // provide('studentAge', 20)
 
-// import DefaultSlot from './components/Slots/DefaultSlot.vue';
-// import FallbackCOntent from './components/Slots/FallbackContent.vue';
-// import NamedSlot from './components/Slots/NamedSlot.vue';
-// import SlotComponent from './components/Slots/SlotComponent.vue';
 
-// import { ref } from 'vue';
-// import Event from './components/Events/Event.vue';
-// import EventForm from './components/Events/EventForm.vue';
+// import EventForm 
 // let count = ref(0)
 
 // const formHandler = (userName, email, password)=>{
@@ -50,44 +33,19 @@ import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue
 //     console.log('password: ', password);
 // }
 
-// import StaticPropsComponent from './components/Props/StaticPropsComponent.vue';
-// import DynamicPropsComponent from './components/Props/DynamicPropsComponent.vue';
-// import DynamicPropsComponent from './components/Props/DynamicPropsComponent.vue';
-// import { ref } from 'vue';
-// import ChangindPropsValue from './components/Props/ChangindPropsValue.vue';
-// import PropValidation from './components/Props/PropValidation.vue';
-// import ComplexProps from './components/Props/ComplexProps.vue';
-// import CustomValidation from './components/Props/CustomValidation.vue';
+// import CustomValidation 
 // const firstName = ref('Pati')
 // const lastName = ref('Oliveira')
 // const number = 10
 
-// import ComputedComponent from './components/Computed/ComputedComponent.vue';
-// import ConditionalRendering from './components/ConditionalRender/ConditionalRendering.vue';
-// import IterationComponent from './components/ConditionalRender/IterationComponent.vue';
-// import MyReactiveComponent from './components/Reactivity/MyReactiveComponent.vue';
-// import MyRefComponent from './components/Reactivity/MyRefComponent.vue';
-
-
-// import HelloWorld from './components/HelloWorld.vue';
-// import MyComponent from './components/MyComponent.vue';
-// import BindComponent from './components/BindComponent.vue';
-
-// import CombinedStyle from './components/Styles/CombinedStyle.vue';
-// import GlobalStyle from './components/Styles/GlobalStyle.vue';
-// import LocalStyle from './components/Styles/LocalStyle.vue';
-// import ModuleStyle from './components/Styles/ModuleStyle.vue';
-
-// import MyEvent from './components/Events/MyEvent.vue';
-
 </script>
 
 <template>
-    <!-- <HelloWorld /> -->
-    <!-- <MyComponent /> -->
-    <!-- <BindComponent /> -->
+    <!-- <HelloWorld />
+     <MyComponent /> 
+     <BindComponent /> -->
 
-     <!-- STYLES -->
+    <!-- STYLES -->
     <!-- <GlobalStyle />
     <LocalStyle />
     <CombinedStyle />
@@ -110,7 +68,7 @@ import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue
     <!-- <IterationComponent /> -->
 
     <!-- StaticComponent 'Two-way-Bind' -->
-     <!-- <StaticPropsComponent name="'Pati'"/>
+    <!-- <StaticPropsComponent name="'Pati'"/>
      <hr>
      <DynamicPropsComponent :firstName="firstName" :lastName="lastName"/>
      <hr>
@@ -128,8 +86,8 @@ import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue
      <hr>
      <CustomValidation name="Patricia" age="23" password="12345" /> -->
 
-     <!-- EVENTS -->
-      <!-- <h1>Count {{ count }}</h1>
+    <!-- EVENTS -->
+    <!-- <h1>Count {{ count }}</h1>
       <Event @incrementCounter="count++" />
       <hr>
       <EventForm @userInfo="formHandler"/> -->
@@ -168,30 +126,39 @@ import CustomDirectives from './components/CustomDirectives/CustomDirectives.vue
       <!-- <SchoolComponent :studentName="studentName" :studentAge="studentAge" /> -->
 
     <!-- Exercise I -->
-     <!-- <PracticeComponent />  -->
+    <!-- <PracticeComponent />  -->
 
     <!-- LifeCycleComponents -->
-     <!-- <LifeCycleComponent v-show="showHide"/>
+    <!-- <LifeCycleComponent v-show="showHide"/>
      <button @click="showHide = !showHide">Show / Hide</button> -->
 
     <!-- Watchers -->
-     <!-- <WatcherComponent /> -->
-     <!-- <ReactiveObj /> -->
-     <!-- <MultipleSources /> -->
+    <!-- <WatcherComponent /> -->
+    <!-- <ReactiveObj /> -->
+    <!-- <MultipleSources /> -->
 
     <!-- Template ref -->
-     <!-- <BasicRef />
+    <!-- <BasicRef />
      <FunctionRef />
      <RefComponent /> -->
 
-     <!-- Async -->
-      <!-- <ToggleFriends /> -->
+    <!-- Async -->
+    <!-- <ToggleFriends /> -->
     
     <!-- Composable -->
-     <!-- <ComposableCounter /> -->
+    <!-- <ComposableCounter /> -->
 
     <!-- CustomDirectives -->
-     <CustomDirectives />
+    <!-- <CustomDirectives /> -->
+
+    <!-- <MainComponent /> -->
+
+    <!-- <FetchingData /> -->
+
+
+    <!-- PROJECTS -->
+   <TodoList />
+
 </template>
 
 <style scoped></style>
