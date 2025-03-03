@@ -1,7 +1,6 @@
 <script setup>
 import WikiClone from './components/WikiClone/WikiClone.vue';
 
-
 </script>
 
 <template>
